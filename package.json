@@ -1,0 +1,27 @@
+{
+  "name": "test28june",
+  "packageManager": "yarn@4.3.1",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.8.0",
+    "@cucumber/messages": "^25.0.1",
+    "@cucumber/pretty-formatter": "^1.0.1",
+    "@playwright/test": "^1.45.1",
+    "@types/node": "^20.14.9",
+    "playwright": "^1.45.1",
+    "react-devtools": "^5.3.1",
+    "standard": "^17.1.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "cucumber-js --require cucumber.conf.js --require tests/steps**/*.steps.js --format @cucumber/pretty-formatter --format html:tests/reports/cucumber-report.html --tags \"not @Manual\" --parallel 1",
+    "test2": "cucumber-js --require cucumber.conf.js --require tests/steps**/*.steps.js --format html:tests/reports/cucumber-report.html --tags \"not @Manual\" --parallel 1",
+    "lint": "standard --fix \"**/*.js\""
+  },
+  "dependencies": {
+    "next": "14.2.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
