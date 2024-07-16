@@ -1,6 +1,6 @@
-import Game from "../js/components/game"
+import Main from "../components/main"
 export default function Home () {
   return (
-    <Game />
+    <Main />
   )
 }

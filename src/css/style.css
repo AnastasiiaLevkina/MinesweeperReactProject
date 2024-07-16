@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'digital-7';
+    src: url('../../public/fonts/digital-7/digital-7.ttf');
+}
+
+.board {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: lightgray;
+    border-width: 4px;
+    border-style: outset;
+    padding: 10px;
+}
+
+.board-header {
+    display: flex;
+    height: 45px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-width: 4px;
+    border-style: inset;
+    padding: 4px;
+}
+
+.cell {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opened-cell {
+    background-color: lightgray;
+    border-width: 2px;
+    border-color: lightgray;
+}
+
+.opened-mined-cell {
+    background-color: red;
+    border-width: 2px;
+    border-color: lightgray;
+}
+
+.hidden-cell {
+    background-color: lightgray;
+    border-width: 3px;
+    border-style: outset;
+    border-color: white;
+}
+
+.cell-image {
+    width: 15px;
+    height: 15px;
+}
+
+.digital-display {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 50px;
+    height: 36px;
+    border-width: 2px;
+    border-style: inset;
+}
+
+.digital-text {
+    font-family: 'digital-7';
+    color: red;
+
+}
+
+.emoji-button {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    border-width: 3px;
+    border-style: outset;
+    border-color: white;
+}
+
+.emoji-image {
+    width: 30px;
+    height: 30px;
+}
+
+.minefield {
+    display: flex;
+    flex-direction: column;
+    border-width: 4px;
+    border-style: inset;
+}
+
+.difficulty-button {
+    background: none;
+    border: none;
+}
+
+.difficulty-button:hover {
+    cursor: pointer;
+}
+
+.selected-difficulty-button {
+    color: black;
+    font-weight: bold;
+}
+
+.unselected-difficulty-button {
+    color: blue;
+}
+
+.unselected-difficulty-button:hover {
+    text-decoration-line: underline;
+}
+
+.container-row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
